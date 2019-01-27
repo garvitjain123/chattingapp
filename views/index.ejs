@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Hydra Chat</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+            <div id="chat_heading">Hydra Chat<span style="padding-top:15px; height:5px; display:block;"></span><span style="font-size:20px; color:white; display:block; padding-bottom: 10px;">(Exclusively for Hydra members)</span></div>
+            <div id = "thebox">
+                <div id=chat_area>
+                    <form>
+                        <div id="chat_name">
+                            <input type="text" id="userbox" placeholder="Default is 'Anonymous'"></input>
+                            <span id="chusername"><button id="chbut">Change Username</button></span>
+                        </div>
+                    </form>
+                </div>
+                <div id="chat_send">
+                    <span id="chmsg"></span>
+                    <span id="chsend">Send</span>
+                </div>
+            </div>
+            
+            <script src="jquery.js"></script>
+            <script src="index.js"></script>
+    </body>
+</html>
