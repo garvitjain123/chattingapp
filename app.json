@@ -1,0 +1,8 @@
+{
+    "name" : "Small Chatting App",
+    "description" : "It is a small project of a chatroom",
+    "env":{
+        "PORT1" : 5000,
+        "PORT2" : 3000
+    }
+}

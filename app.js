@@ -2,7 +2,7 @@ var express     = require('express');
 var app         = express();
 var i           = 0;
 
-var server     = app.listen(3000);
+var server     = app.listen(process.env.PORT || 3000);
 var io          = require("socket.io").listen(server);
 
 app.set("view engine","ejs");
@@ -29,6 +29,6 @@ app.get("/",function(req,res){
    res.render("index");
 });
 
-app.listen(5002, function(){
+app.listen(process.env.PORT || 5000, function(){
     console.log("The Server has been started");
 });
